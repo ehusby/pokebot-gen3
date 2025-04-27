@@ -70,6 +70,7 @@ GBA_ROMS = [
     "04139887b6cd8f53269aca098295b006ddba6cfe",  # Pocket Monsters - FireRed (Japan).gba
     "7c7107b87c3ccf6e3dbceb9cf80ceeffb25a1857",  # Pocket Monsters - FireRed (Japan) (Rev 1).gba
     "ab8f6bfe0ccdaf41188cd015c8c74c314d02296a",  # Pokémon - Edicion Rojo Fuego (Spain).gba
+    "cbd71af65ee3dcd53280a6a12014bfb11e8f626a",  # Pokemon Emerald Legacy (V1.1.4).gba
 ]
 GBA_ROMS = list(map(lambda x: x.lower(), GBA_ROMS))
 CUSTOM_GBA_ROM_HASHES: set[str] | None = None
@@ -121,6 +122,10 @@ class ROM:
     @property
     def is_emerald(self) -> bool:
         return self.game_title == "POKEMON EMER"
+
+    @property
+    def is_emerald_legacy(self) -> bool:
+        return "legacy" in self.file.name.lower()
 
     @property
     def is_ruby(self) -> bool:

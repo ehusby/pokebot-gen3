@@ -71,3 +71,4 @@ List of ROM hashes that the bot will accept:
 | Pocket Monsters - FireRed (Japan).gba | `04139887b6cd8f53269aca098295b006ddba6cfe` |
 | Pocket Monsters - FireRed (Japan) (Rev 1).gba | `7c7107b87c3ccf6e3dbceb9cf80ceeffb25a1857` |
 | Pokémon - Edicion Rojo Fuego (Spain).gba | `ab8f6bfe0ccdaf41188cd015c8c74c314d02296a` |
+| Pokemon Emerald Legacy (V1.1.4).gba | `cbd71af65ee3dcd53280a6a12014bfb11e8f626a` |

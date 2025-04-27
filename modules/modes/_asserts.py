@@ -195,6 +195,9 @@ def assert_player_has_poke_balls(check_in_saved_game: bool = False) -> None:
     Raises an exception if the player doesn't have any Pokeballs when starting a catching mode
     or if safari ball threshold is reached.
     """
+    if context.rom.is_emerald_legacy:
+        return
+
     out_of_safari_balls_error = "You have less than 15 Safari balls left, switching to manual mode..."
     out_of_poke_balls_error = "Out of Poké balls! Better grab more before the next shiny slips away..."
 

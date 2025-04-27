@@ -185,7 +185,10 @@ def set_rom(rom: ROM) -> None:
             _load_event_flags_and_vars("rs.txt")
 
         case "BPE":
-            _load_symbols("pokeemerald.sym", rom.language)
+            if rom.is_emerald_legacy:
+                _load_symbols("pokeemerald_legacy_114.sym", rom.language)
+            else:
+                _load_symbols("pokeemerald.sym", rom.language)
             _load_event_flags_and_vars("emerald.txt")
 
         case "BPR":
